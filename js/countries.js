@@ -13,8 +13,12 @@ const displayCountries = (countries) => {
         div.innerHTML = `
         <h2>${country.name}</h2>
         <p>${country.capital}</p>
-        <button>Details</button>
-        `
+        <button onclick="loadCountryByName('${country.name}, ${country.capital}')">Details</button>
+        `;
         countriesDiv.appendChild(div);
     });
+}
+
+const loadCountryByName = name => {
+
 }
